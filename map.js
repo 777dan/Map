@@ -65,7 +65,7 @@ window.onload = function () {
         let coords1 = document.getElementById("coords1");
         let distanceX = event.offsetX - treasure.x;
         let distanceY = event.offsetY - treasure.y;
-        return coords1.value = Math.sqrt(distanceX + distanceY);
+        return coords1.value = Math.sqrt(Math.pow(distanceX, 2) + Math.pow(distanceY, 2));
     }
 };
 
